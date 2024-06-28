@@ -41,9 +41,9 @@ export class ReproductorComponent {
   }
 
   reproducirCancion(urlCancion: string): void {
-    this.audio.pause(); // Detenemos la canción actual si se está reproduciendo
-    clearInterval(this.intervalo); // Limpiamos el intervalo actual
-
+   // this.audio.pause(); // Detenemos la canción actual si se está reproduciendo
+   this.audio.pause();
+   clearInterval(this.intervalo); // Limpiamos el intervalo actual
     this.audio.src = urlCancion;
     this.audio.load();
     this.audio.play();
@@ -64,6 +64,7 @@ export class ReproductorComponent {
     }
   }
   calcularRecorrido() {
+   
     this.intervalo = setInterval(() => {
       if (this.recorrido < this.duracionEstandar && !this.isPausado) {
         this.recorrido++;
