@@ -1,0 +1,145 @@
+.contenedor {
+    display: grid;
+    grid-template-columns: 20% 1fr 1fr;
+    grid-template-rows: 125px 1fr 1fr 100px;
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0.5em;
+    width: 99%;
+
+    height: 100%;
+}
+
+.buscar {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.listas {
+    grid-area: 2 / 1 / 4 / 2;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    grid-row-gap: 0.5em;
+
+}
+
+.reproduccion {
+    grid-area: 4 / 1 / 5 / 4;
+
+}
+
+.explorador {
+    grid-area: 1 / 2 / 4 / 4;
+}
+
+.tarjeta {
+    background: #313131;
+    border-radius: 10px;
+
+
+
+}
+
+.buscar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    
+    color: aliceblue;
+}
+
+.buscar>div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1em;
+    padding-left: 1em;
+    color: rgb(216, 217, 218);
+    font-size: 20px;
+}
+
+.buscar>div:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(216, 217, 218);
+    font-size: 16px;
+    margin-top: 1.5em;
+}
+
+.header:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.buscador {
+    margin-left: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    margin-top: 1em;
+}
+
+.buscador>label {
+    color: rgb(216, 217, 218);
+}
+
+input {
+    width: 150px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid beige;
+    border-radius: 5px;
+    color: white;
+}
+
+.listasrep {
+    height: 90%;
+   
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.tarjetaLista {
+    padding: 0.3em;
+    
+    border-radius: 10px;
+    width: 90%;
+    margin: 0 auto;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    gap: 1em;   
+    font-size: 16px;
+}
+
+.tarjetaLista:hover{
+    background-color: #474747;
+}
+
+.imgLista img {
+    width: 70px;
+}
+
+.btn {    
+    width: 120px;
+    height: 40px;
+    border-radius: 50px;
+    transition: transform .3s ease-in;
+    border: none;
+    background-color: #1ed760;
+    color: black;
+    cursor: pointer;
+
+}

@@ -1,0 +1,18 @@
+<div class="contenedorReproducto">
+    <div class="infoCancion"></div>
+    <div class="reproducor">
+        <div class="controles">
+            <i class="fa-solid fa-backward"></i>
+           <div class="play" (click)="pausar()"><i  class="fa-solid fa-play"></i></div> 
+            <i class="fa-solid fa-forward"></i>
+        </div>
+        <div >
+
+            <div class="barra" [style.background-image]="getBarraBackground()"></div>
+
+
+        </div>
+       
+    </div>
+    <div class="volumen"></div>
+</div>

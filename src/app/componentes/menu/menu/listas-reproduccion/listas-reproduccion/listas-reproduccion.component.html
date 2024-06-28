@@ -1,0 +1,28 @@
+<div class="contenedor">
+
+  <div class="tarjetaCabeza">
+
+    <div>
+        <h1 class="miLista">Mi lista de reproducción</h1>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 1em; ">
+      <div class="simbolo"><i class="fa-solid fa-music"></i></div>
+      
+      <form [formGroup]="formulariolista" class="formulario" >
+        <div><input type="text"  formControlName="nombre" placeholder="Nombre de la lista" /></div>
+        <div><input type="text" formControlName="descripcion" placeholder="Descripción" /></div>
+      </form>
+
+
+    </div>
+    <button (click)="crear()">Guardar</button>
+  </div>
+  <div class="canciones_card">
+    <div *ngFor="let item of listasReproduccion ">
+      <app-cancion-banner  [informacion]="item"></app-cancion-banner>
+    </div>
+  </div>
+
+
+</div>

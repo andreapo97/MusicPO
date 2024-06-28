@@ -1,0 +1,9 @@
+
+<div class="recomendado">Recomendados
+</div>
+<div class="tarjetasRecomedadas">
+    <div *ngFor="let item of listaRecomendados">
+        <app-cancion-card [informacion]="item"></app-cancion-card>
+    </div>
+
+</div>

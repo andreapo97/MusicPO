@@ -1,0 +1,42 @@
+<div class="contenedor">
+  <div class="buscar tarjeta">
+    <div style="display: flex; flex-direction: column;">
+      <div [routerLink]="['/home']"><i class="fa-solid fa-house" ></i>Inicio</div>
+      <div [routerLink]="['/home/canciones']"><i class="fa-solid fa-magnifying-glass"></i>Buscar</div>
+    </div>
+    <div><button class="btn" (click)="cerrarsesion()">Cerrar sesion</button></div>
+   
+  </div>
+  <div class="listas tarjeta">
+    <div class="header">
+      <div>
+        <i class="fa-solid fa-headphones-simple"></i>
+        Listas de reproducción
+      </div>
+      <div [routerLink]="['/home/listas']"><i class="fa-solid fa-plus"></i></div>
+    </div>
+
+    <div class="buscador">
+      <label><i class="fa-solid fa-magnifying-glass"></i></label>
+      <input type="text" />
+    </div>
+
+    <div class="listasrep">
+      <div class="tarjetaLista" *ngFor="let item of listasReproduccion">
+        <div class="imgLista">
+          <img [src]="item.imagen" alt="imagen" />
+        </div>
+        <div class="nombre">{{item.nombre}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="reproduccion tarjeta">
+ <app-reproductor></app-reproductor>
+
+  </div>
+  <div class="explorador tarjeta">
+
+    <router-outlet></router-outlet>
+    
+  </div>
+</div>

@@ -1,0 +1,119 @@
+.contenedor {
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(55, 55, 55, 1) 100%);
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorLogin {
+    background-color: #070707;
+    border-radius: 10px;
+    width: 30%;
+    height: 90%;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+}
+
+h1 {
+    color: aliceblue;
+}
+
+.registro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+hr {
+    margin: 32px 100px;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    border-image: initial;
+    border-top: 1px solid rgb(41, 41, 41);
+}
+
+.sesion {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 1em;
+
+}
+
+input {
+    width: 250px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid beige;
+    color: white;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #070707 inset;
+    /* Cambia "white" al color de fondo deseado */
+    color: #fff;
+    /* Color de texto para estado autocompletado */
+
+}
+
+span {
+    color: red;
+    font-size: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 1em;
+    width: 265px;
+}
+
+
+form>div {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5em;
+
+}
+
+
+.btn {
+    width: 250px;
+    height: 40px;
+    border-radius: 50px;
+    transition: transform .3s ease-in;
+    border: none;
+
+}
+
+.registrar {
+    font-weight: bold;
+}
+
+.iniciarSesion {
+    background-color: #1ed760;
+    color: black;
+    font-weight: bold;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+label {
+    color: aliceblue;
+}

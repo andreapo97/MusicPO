@@ -1,0 +1,135 @@
+.contenedor-card {
+
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    justify-content: center;
+    gap: 1em;  
+ 
+    position: relative;
+
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 20px 50px 1fr 300px 150px auto;
+    gap: 1em;  
+    
+    position: relative;
+    width: 100%;
+}
+
+.contenedor-card:hover {
+    background-color: #474747;
+    cursor: pointer;
+}
+
+.name-card{
+    width: 80%;
+}
+
+.name-card p {
+    color: aliceblue;
+    font-size: 16px;
+    max-width: 100%;
+    overflow: hidden;
+    /* Oculta cualquier contenido que desborde del contenedor */
+    text-overflow: ellipsis;
+    /* Agrega puntos suspensivos (...) al final del texto desbordado */
+    white-space: nowrap;
+    /* Evita que el texto se divida en múltiples líneas */
+}
+
+.artista p {
+    color: rgb(153, 157, 159);
+    font-size: 14px;
+    max-width: 200px;
+    overflow: hidden;
+    /* Oculta cualquier contenido que desborde del contenedor */
+    text-overflow: ellipsis;
+    /* Agrega puntos suspensivos (...) al final del texto desbordado */
+    white-space: nowrap;
+    /* Evita que el texto se divida en múltiples líneas */
+}
+
+
+.duracion p {
+    color: rgb(153, 157, 159);
+    font-size: 14px;
+    max-width: 200px;
+    overflow: hidden;
+    /* Oculta cualquier contenido que desborde del contenedor */
+    text-overflow: ellipsis;
+    /* Agrega puntos suspensivos (...) al final del texto desbordado */
+    white-space: nowrap;
+    /* Evita que el texto se divida en múltiples líneas */
+}
+
+
+
+.img-card {
+    width: 30x;
+    height: 30x;
+    overflow: hidden;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-card>img {
+    width: 30px;
+    height:30px;
+}
+
+.play {
+    background: #1ed760;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    display: none;   
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;   
+    transition: opacity  .5s ease-in-out;
+
+}
+
+.contenedor-card:hover .play {
+    display: flex; 
+    
+}
+.contenedor-card:hover .index > p {
+    display: none; 
+}
+
+.index{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.index p{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: white;
+ font-size: 16px;
+
+}
+
+
+.add{
+    font-size: 16px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

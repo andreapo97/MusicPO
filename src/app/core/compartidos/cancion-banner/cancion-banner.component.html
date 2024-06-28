@@ -1,0 +1,32 @@
+<div class="contenedor-card" (click)="elejircancion(informacion.id)">
+    <div class="card">
+        <div class="index">
+            <p>{{informacion.index}}</p>
+            <div class="play">
+                <i class="fa-solid fa-play"></i>
+            </div>
+    
+        </div>
+       
+        <div class="img-card">
+            <img [src]="informacion.imagen" alt="imagen">
+            
+        </div>
+        <div class="name-card">
+            <p>{{informacion.cancion}}</p>
+        </div>
+        <div class="artista">
+            <p>{{informacion.artista}}</p>
+        </div>
+        <div class="duracion">
+            <p>{{informacion.duracion}}</p>
+        </div>
+        <div class="add">
+            <i class="fa-solid fa-circle-plus"></i>
+        </div>
+
+       
+
+
+    </div>
+</div>

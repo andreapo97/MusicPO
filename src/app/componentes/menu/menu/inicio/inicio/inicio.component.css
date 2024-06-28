@@ -1,0 +1,21 @@
+.tarjetasRecomedadas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+
+    width: 100%;
+    height: 90%;
+    overflow: auto;
+}
+.recomendado{
+    font-size: 24px;
+    color: white;
+    height: 40px;
+    font-weight: bold; 
+    margin-left: 1%; 
+    margin-top: 1%;  
+    width: 98%;
+    /* background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(30,215,96,1) 100%); */
+}

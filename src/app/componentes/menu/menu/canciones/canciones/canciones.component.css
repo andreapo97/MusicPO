@@ -1,0 +1,48 @@
+.title_input {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+
+    color: aliceblue;
+    font-size: 16px;
+    margin-bottom: 1em;
+}
+
+.title_input input {
+    width: 50%;
+    height: 40px;
+    background: transparent;
+    border: solid 1px white;
+    border-radius: 10px;
+    margin-top: 2em;
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: bold;
+    
+
+}
+
+.canciones_card {
+    height: 80%;
+    overflow: auto;
+
+}
+
+.canciones_card>div {
+    margin: 1em;
+}
+
+
+.btn {
+    margin-top: 2em;
+    margin-left: 1em;
+    width: 120px;
+    height: 40px;
+    border-radius: 50px;
+    transition: transform .3s ease-in;
+    border: none;
+  
+
+}

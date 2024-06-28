@@ -1,0 +1,17 @@
+<div>
+
+    <div class="title_input">
+       
+        <input placeholder=" Buscar canciones" [formControl]="cancionControl" type="text" />
+        <button class="btn" (click)="BuscarCancion()">Buscar</button>
+    </div>
+
+
+  <div class="canciones_card">
+    <div *ngFor="let item of cancionesBusqueda">
+      <app-cancion-banner (idCancionElegida)="elegircancion($event)" [informacion]="item"></app-cancion-banner>
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,50 @@
+<div class="contenedor">
+  <div class="contenedorLogin">
+
+    <div class="registro">
+      <h1>Registrarse</h1>
+      <form [formGroup]="formularioRegistro">
+
+        <div>
+          <label>Nombre de usuario</label>
+          <input formControlName="userName" type="text" />
+        </div>
+        <div>
+          <label>Correo</label>
+          <input formControlName="email" type="email" />
+          <span *ngIf="formularioRegistro.get('email')?.invalid && formularioRegistro.get('email')?.touched" >Ingrese un correo valido eje: algo&#64;gmail.com</span>
+        </div>
+        <div>
+          <label>Contraseña</label>
+          <input formControlName="password"  type="password" />
+          <span *ngIf="formularioRegistro.get('password')?.invalid && formularioRegistro.get('password')?.touched">Ingrese contraseña de 8 caracteres una mayuscula y un caracter especial</span>
+        </div>
+
+        <button (click)="registro()" class="btn registrar">Registar</button>
+      </form>
+
+    </div>
+
+    <hr>
+
+    <div class="sesion">
+      <h1>Iniciar Sesión</h1>
+
+      <div>
+      <form [formGroup]="formularioSesion">
+
+        <div>
+          <label>Nombre usuario o correo</label>
+          <input formControlName="userName"  type="text" />
+
+        </div>
+        <div>
+          <label>Contraseña</label>
+          <input formControlName="password"  type="password" />
+        </div>
+        <button (click)="iniciarsesion()" class="btn iniciarSesion">Iniciar Sesión</button>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+.contenedorReproducto{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    gap: 1em;    
+}
+.controles{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    gap: 1em;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.play {
+    background: white;
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    color: black !important;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity  .5s ease-in-out;
+
+}
+.barra {
+    width: 600px;
+    height: 5px; 
+    background-size: 200% 100%;
+    transition: background-position 0.3s ease;
+    margin: auto;
+    margin-top: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
